@@ -1,7 +1,7 @@
 # Rstudio Instructions
 
 
-## Download and install Rstudio and dependencies
+## Download and install RStudio and dependencies
 
 - Download RStudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
     - RStudio also requires R to be installed alongside Rstudio (link to download from the offical R repository is available from the link above)
@@ -23,4 +23,5 @@
 
 
 ## Running the scripts within Rstudio
+-The RMarkdown file [/Scripts/Rstudio/framework_notebook.Rmd](/Scripts/Rstudio/framework_notebook.Rmd)
 
