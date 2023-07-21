@@ -3,8 +3,8 @@
 
 ## Download and install Rstudio and dependencies
 
-- Download Rstudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
-    - Rstudio also requires R to be installed alongside Rstudio (link to download from the offical R repository is available from the link above)
+- Download RStudio from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+    - RStudio also requires R to be installed alongside Rstudio (link to download from the offical R repository is available from the link above)
 - R Packages to enable in RStudio:
     - System Library (these should all be on by default)
         - base
