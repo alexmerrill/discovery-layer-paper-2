@@ -1,3 +1,9 @@
+$apiKey = [your apiKey]
+$vid = [your VID]
+$tab = [your tabName]
+$scope = [your scopeName]
+$inst = [your institutionName]
+
 $queryStrings = "C:\path\to\paperTitlesInPrimo.txt"
 
 ##Uncomment as needed to process various reports
@@ -23,10 +29,9 @@ $queryList = Get-Content -Encoding UTF8 $queryStrings -ErrorAction SilentlyConti
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$apiKey = [yourApiKey]
 foreach ($query in $queryList) {
 
-$urlCurrent = "https://api-na.hosted.exlibrisgroup.com/primo/v1/search?vid=WSU&tab=default_tab&scope=WSU_everything&q=any,contains," + $query + $facets + $date + "&lang=eng&offset=0&limit=50&sort=rank&pcAvailability=true&getMore=0&conVoc=true&inst=WSU&apikey=$apiKey"
+$urlCurrent = "https://api-na.hosted.exlibrisgroup.com/primo/v1/search?vid=" + $vid + "&tab=" + $tab + "&scope=" + $scope + "&q=any,contains," + $query + $facets + $date + "&lang=eng&offset=0&limit=50&sort=rank&pcAvailability=true&getMore=0&conVoc=true&inst=" + $inst + "&apikey=" + $apiKey
 $resultsCurrent = Invoke-WebRequest -Uri $urlCurrent | ConvertFrom-Json
 $numResultsCurrent = $resultsCurrent.info.total
 $titleCurrent = $resultsCurrent.docs.pnx.display.title -join "|"
