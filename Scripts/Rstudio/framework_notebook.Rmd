@@ -38,7 +38,7 @@ colnames(matches) <- c("Paper title","Biblography title","Bibliography Type","Qu
 while (n  < 464  ) {
 #n is the number of source citations to check (source citations from papers, for spring 21 citation count is 463) 
 #b is the whole number of titles returned from queries to check  (titles returned from discovery layer to compare against. for spring 2021 this will be different based on the facets and the queries....4273.)
-while (b < 4546) {
+while (b < 4445) {
  #the column placement of the paper title/query in matrixsearchit_titles changed depending on the semester files being run fall2020 it is  matrixsearchit_titles[b,2] spring 2021 it is  matrixsearchit_titles[b,1] .. also means we need to slide the stringdist comparators down one from tolower(matrixsearchit_titles[b,4] to tolower(matrixsearchit_titles[b,3]
   if(matrix_source_title[i,2] == matrixsearchit_titles[b,1])  
     #this statement ensures we are only running a match process on titles that are germane ==  these two cells represent the Paper/Query match point.

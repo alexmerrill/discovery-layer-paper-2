@@ -24,4 +24,9 @@
 
 ## Running the scripts within Rstudio
 -The RMarkdown file [/Scripts/Rstudio/framework_notebook.Rmd](/Scripts/Rstudio/framework_notebook.Rmd)
+-Sample Input and Output files are in the [/Sample Data](/Sample Data) Folder
+  -Input:  Primo Search Results [/Sample Data/primo-api-results-articlesOnly-normalized.csv](/Sample Data/primo-api-results-articlesOnly-normalized.csv)
+  -Input:  Source Citations [/Sample Data/source-paper-citations-normalized.csv](/Sample Data/source-paper-citations-normalized.csv)
+  -Output: Resulting Matches .CSV [/Sample Data/ArticlesOnly_normalized_matches.csv](/Sample Data/ArticlesOnly_normalized_matches.csv)
+  
 
