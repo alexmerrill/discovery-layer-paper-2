@@ -24,5 +24,5 @@
 
 ## Running the scripts within Rstudio
 -The RMarkdown file [/Scripts/Rstudio/framework_notebook.Rmd](/Scripts/Rstudio/framework_notebook.Rmd)
--Sample Input and Output files are in the [Sample Data](/Sample Data) Folder
+
 
