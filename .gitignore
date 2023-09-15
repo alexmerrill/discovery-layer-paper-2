@@ -9,5 +9,5 @@ Data/
 notes_testing.R
 Scripts/Rstudio/framework_notebook_local.rmd
 notebook_testing.nb
-notebook_testing.rmd
+notebook_testing.Rmd
 *.csv
