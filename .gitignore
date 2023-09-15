@@ -8,4 +8,6 @@ Old_folder_check_then_delete/
 Data/
 notes_testing.R
 Scripts/Rstudio/framework_notebook_local.rmd
+notebook_testing.nb
+notebook_testing.rmd
 *.csv
