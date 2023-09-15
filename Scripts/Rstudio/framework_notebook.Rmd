@@ -11,11 +11,11 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 ```{r}
 
 #Loads and reads the .CSV from the Primo API calls that have been split into one observation per row into a dataframe and then expressed as a matrix
-searchit_titles=read.csv("D:/Rstudio projects/tidy_string_distance/Spring_2021/Normalized/paperTitles-inSearchItYes-Spri2021-noRefnoNewsnoReview-oneObsPerRow-normalized.csv")
+searchit_titles=read.csv("D:/Rstudio projects/tidy_string_distance/Sample Data/primo-api-results-articlesOnly-normalized.csv")
 matrixsearchit_titles=as.matrix(searchit_titles)
 
 #loads and reads the .csv of the source citation lists by semester into a dataframe and then expressed as a matrix
-source_titles=read.csv("D:/Rstudio projects/tidy_string_distance/Spring_2021/Normalized/spring-2021-paper-citations-normalized.csv")
+source_titles=read.csv("D:/Rstudio projects/tidy_string_distance/Sample Data/source-paper-citations-normalized.csv")
 matrix_source_title=as.matrix(source_titles)
 
 
@@ -58,8 +58,8 @@ while (b < 4546) {
 ```
 ```{r}
 
-#Witing the resultant matches dataframe into a .csv
-write.csv(matches,"D:\\Rstudio projects\\tidy_string_distance\\Spring_2021\\Normalized\\Spring2021_noNewsnoRefsnoReviews_normalized_JW2_matches.csv")
+#Writing the resultant matches dataframe into a .csv
+write.csv(matches,"D:\\Rstudio projects\\tidy_string_distance\\Sample Data\\ArticlesOnly_normalized_matches.csv")
 
 ```
 
